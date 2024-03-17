@@ -8,12 +8,10 @@ app.get('/estimate-charging-time', (req, res) => {
   const stateOfCharge = parseFloat(req.query.soc);
   const batteryCapacity = parseFloat(req.query.battcapacity);
   // Calculate charging time (a basic example)
-
   const intermediateValue = (batteryCapacity / connectorPower);
   const chargingTime = (intermediateValue) - (intermediateValue * (stateOfCharge / 100));
-
   // Send response with the estimated charging time
-  res.status(200).json({chargingTime});
+  res.status(200).json({estimationChargingTime: chargingTime});
 });
 
 const PORT = 3000;

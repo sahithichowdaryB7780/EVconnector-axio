@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\gates",
     "\\test"
   ],
+  "SelectedNode": "\\test\\test.js",
   "PreviewInSolutionExplorer": false
 }
