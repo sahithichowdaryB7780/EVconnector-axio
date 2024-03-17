@@ -13,7 +13,6 @@ app.get('/estimate-charging-time', (req, res) => {
   // Send response with the estimated charging time
   res.status(200).json({estimationChargingTime: chargingTime});
 });
-
 const PORT = 3000;
 module.exports = app.listen(PORT);
 
