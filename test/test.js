@@ -10,7 +10,7 @@ describe('/estimate-charging-time', () => {
         .query({power: 10, soc: 50, battcapacity: 40});
 
     expect(response.status).to.equal(200);
-    expect(response.body).to.have.property('chargingTime');
+    expect(response.body).to.have.property('estimationChargingTime');
     expect(response.body.chargingTime).to.equal(2);
   });
 });
