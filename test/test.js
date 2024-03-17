@@ -11,6 +11,6 @@ describe('/estimate-charging-time', () => {
 
     expect(response.status).to.equal(200);
     expect(response.body).to.have.property('estimationChargingTime');
-    expect(response.body.chargingTime).to.equal(2);
+    expect(response.body.estimationChargingTime).to.equal(2);
   });
 });
